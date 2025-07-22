@@ -1,0 +1,80 @@
+{
+  "info": {
+    "name": "AutomationInTesting API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET Bookings",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://automationintesting.online/api/booking",
+          "protocol": "https",
+          "host": ["automationintesting","online"],
+          "path": ["api","booking"]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Response is a JSON array\", function () {",
+              "    pm.expect(pm.response.json()).to.be.an('array');",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST Create Booking",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"firstname\": \"Lucia\",\n  \"email\": \"lucia@example.com\",\n  \"telephone\": \"987654321\",\n  \"arrival\": \"2025-07-22\",\n  \"departure\": \"2025-07-24\",\n  \"people\": 2\n}"
+        },
+        "url": {
+          "raw": "https://automationintesting.online/api/booking",
+          "protocol": "https",
+          "host": ["automationintesting","online"],
+          "path": ["api","booking"]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200 or 201\", function () {",
+              "    pm.response.to.be.oneOf([200, 201]);",
+              "});",
+              "pm.test(\"Response has property 'id'\", function () {",
+              "    var jsonData = pm.response.json();",
+              "    pm.expect(jsonData).to.have.property('id');",
+              "});",
+              "pm.test(\"Response firstname is correct\", function () {",
+              "    var jsonData = pm.response.json();",
+              "    pm.expect(jsonData.firstname).to.eql(\"Lucia\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ]
+    }
+  ]
+}
