@@ -2,6 +2,7 @@
 
 This project demonstrates a complete quality assurance process, including manual testing and API automation using Postman.
 
+
 ## 🔍 Project Scope
 
 - Creation of a **Test Plan**
@@ -9,11 +10,13 @@ This project demonstrates a complete quality assurance process, including manual
 - Reporting of **Bug Reports**
 - API test automation using **Postman**
 
+
 ## 📌 Target Application
 
 All tests were performed on the public API provided by:
 
 [Automation in Testing (Ait) – API](https://automationintesting.online/)
+
 
 ## 📁 Project Structure
 
