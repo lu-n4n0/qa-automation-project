@@ -1,0 +1,10 @@
+{
+  "name": "automationintesting-api-tests",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "newman run collection.json"
+  },
+  "devDependencies": {
+    "newman": "^5.3.0"
+  }
+}
