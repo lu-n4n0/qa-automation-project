@@ -18,11 +18,6 @@ All tests were performed on the public API provided by:
 [Automation in Testing (Ait) – API](https://automationintesting.online/)
 
 
-## 📁 Project Structure
-
-.
-├── docs/ # Test plan, test cases, bug reports (Markdown)
-└── tests/api/ # Postman collection file (.json)
 
 ## ▶️ How to Run API Tests
 
