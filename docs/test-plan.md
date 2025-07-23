@@ -1,61 +1,61 @@
-# Plan de Test – Projet QA Automation sur automationintesting.online
+# Test Plan – QA Automation Project on automationintesting.online
 
 ## 1. Introduction
 
-Ce document décrit la stratégie et la portée des tests pour le site [https://automationintesting.online/](https://automationintesting.online/), un site de démonstration conçu pour la pratique des tests logiciels.
+This document describes the testing strategy and scope for the site [https://automationintesting.online/](https://automationintesting.online/), a demo site designed for practicing software testing.
 
-## 2. Objectifs des tests
+## 2. Test Objectives
 
-- Garantir la qualité fonctionnelle et la stabilité des fonctionnalités principales.
-- Valider les interfaces utilisateur et les interactions.
-- Vérifier le bon fonctionnement de l’API REST exposée.
-- Assurer une couverture suffisante des tests manuels et automatisés.
-- Détecter et documenter les anomalies.
-- Permettre une exécution régulière de tests de non-régression.
+- Ensure the functional quality and stability of key features.
+- Validate user interfaces and interactions.
+- Verify the correct operation of the exposed REST API.
+- Ensure sufficient coverage of manual and automated tests.
+- Detect and document defects.
+- Enable regular execution of regression tests.
 
-## 3. Périmètre des tests
+## 3. Test Scope
 
-Les tests porteront sur les modules suivants :
+The tests will cover the following modules:
 
-- Formulaire de réservation (booking form)
-- Authentification et backoffice
-- Gestion des chambres (CRUD)
-- API REST (réservations, utilisateurs, chambres)
-- Navigation et interface utilisateur (UI/UX)
+- Booking form
+- Authentication and backoffice
+- Room management (CRUD)
+- REST API (bookings, users, rooms)
+- Navigation and user interface (UI/UX)
 
-## 4. Types de tests
+## 4. Types of Tests
 
-| Type de test           | Description                                    |
-|-----------------------|------------------------------------------------|
-| Tests fonctionnels     | Tests manuels et automatisés sur les fonctionnalités principales |
-| Tests d’API            | Validation des endpoints API via Postman ou scripts |
-| Tests UI              | Tests automatisés des interfaces utilisateur via Selenium/Cypress |
-| Tests de non-régression| Exécution régulière des tests automatisés pour détecter les régressions |
-| Tests de performance   | (Optionnel) Mesure des temps de réponse |
+| Test Type               | Description                                     |
+|-------------------------|------------------------------------------------|
+| Functional Testing      | Manual and automated tests on key features     |
+| API Testing             | Validation of API endpoints via Postman or scripts |
+| UI Testing              | Automated user interface tests via Selenium/Cypress |
+| Regression Testing      | Regular execution of automated tests to detect regressions |
+| Performance Testing     | (Optional) Measuring response times             |
 
-## 5. Environnement de test
+## 5. Test Environment
 
-- Site web accessible à l’URL : [https://automationintesting.online/](https://automationintesting.online/)
-- Navigateurs supportés : Chrome (dernière version), Firefox
-- Outils : Postman, Cypress, Selenium WebDriver, PyTest, etc.
-- Système d’exploitation : Windows / macOS / Linux
+- Website URL: [https://automationintesting.online/](https://automationintesting.online/)
+- Supported browsers: Chrome (latest version), Firefox
+- Tools: Postman
+- Operating Systems: Windows / macOS / Linux
 
-## 6. Critères d’entrée
+## 6. Entry Criteria
 
-- Site accessible et stable
-- Accès aux outils de test et environnements configurés
-- Jeux de données de test validés
+- Site is accessible and stable
+- Access to test tools and configured environments
+- Validated test data sets
 
-## 7. Critères de sortie
+## 7. Exit Criteria
 
-- Tous les cas de test critiques exécutés avec succès
-- Les anomalies majeures corrigées ou consignées
-- Rapports de test validés et disponibles
-- Environnements remis en état stable
+- All critical test cases executed successfully
+- Major defects fixed or documented
+- Test reports validated and available
+- Environments restored to a stable state
 
-## 8. Livrables
+## 8. Deliverables
 
-- Cas de tests manuels (fichier Markdown)
-- Scripts de tests automatisés (UI et API)
-- Rapports d’exécution et d’anomalies
-- Documentation du projet (README, plan de test, guide d’exécution)
+- Manual test cases (Markdown file)
+- Automated test scripts (UI and API)
+- Execution and defect reports
+- Project documentation (README, test plan, execution guide)

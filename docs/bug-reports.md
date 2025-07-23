@@ -1,42 +1,42 @@
-# Rapport de Bugs
+# Bug Report
 
 ---
 
-## BUG001 – Soumission formulaire avec email invalide accepté
+## BUG001 – Form submission accepts invalid email
 
 ### Description
-Le formulaire accepte une adresse email incorrecte sans afficher d’erreur.
+The form accepts an incorrect email address without showing any error.
 
-### Étapes pour reproduire
-1. Aller sur la page d’accueil
-2. Remplir tous les champs correctement sauf le champ email : "lucia@"
-3. Cliquer sur "Book"
+### Steps to Reproduce
+1. Go to the homepage
+2. Fill in all fields correctly except the email field: "lucia@"
+3. Click on "Book"
 
-### Résultat attendu
-Message d’erreur bloquant la soumission.
+### Expected Result
+An error message blocking the submission.
 
-### Résultat observé
-Le formulaire est soumis sans message d’erreur.
+### Actual Result
+The form is submitted without any error message.
 
-### Statut
-Ouvert
+### Status
+Open
 
 ---
 
-## BUG002 – Bouton "Backoffice" non cliquable sur mobile
+## BUG002 – "Backoffice" button not clickable on mobile
 
 ### Description
-Sur mobile, le bouton "Backoffice" ne répond pas au clic.
+On mobile, the "Backoffice" button does not respond to clicks.
 
-### Étapes pour reproduire
-1. Ouvrir le site sur un smartphone
-2. Taper sur le bouton "Backoffice"
+### Steps to Reproduce
+1. Open the site on a smartphone
+2. Tap on the "Backoffice" button
 
-### Résultat attendu
-Navigation vers la page de connexion.
+### Expected Result
+Navigate to the login page.
 
-### Résultat observé
-Aucun effet au clic.
+### Actual Result
+No effect on click.
 
-### Statut
-Ouvert
+### Status
+Open

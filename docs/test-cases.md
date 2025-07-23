@@ -1,59 +1,59 @@
-# Cas de Tests Manuels
+# Manual Test Cases
 
 ---
 
-## TC001 – Soumission formulaire réservation valide
+## TC001 – Valid reservation form submission
 
-### Préconditions
-- L’utilisateur est sur la page d’accueil de https://automationintesting.online/
+### Preconditions
+- The user is on the homepage of https://automationintesting.online/
 
-### Étapes
-1. Remplir le champ "Nom" avec "Lucia"
-2. Remplir le champ "Email" avec "lucia@example.com"
-3. Remplir le champ "Téléphone" avec "987654321"
-4. Sélectionner la date d’arrivée (aujourd’hui)
-5. Sélectionner la date de départ (+2 jours)
-6. Saisir "2" pour le nombre de personnes
-7. Cliquer sur le bouton "Book"
+### Steps
+1. Fill in the "Name" field with "Lucia"
+2. Fill in the "Email" field with "lucia@example.com"
+3. Fill in the "Phone" field with "987654321"
+4. Select the arrival date (today)
+5. Select the departure date (+2 days)
+6. Enter "2" for the number of guests
+7. Click the "Book" button
 
-### Résultat attendu
-- Un message de confirmation s’affiche
-- Le formulaire est vidé
+### Expected Result
+- A confirmation message is displayed
+- The form is cleared
 
-### Statut
-À tester
-
----
-
-## TC002 – Validation du champ email (email invalide)
-
-### Préconditions
-- L’utilisateur est sur la page d’accueil
-
-### Étapes
-1. Remplir tous les champs sauf l’email (exemple : "lucia" ou "lucia@")
-2. Cliquer sur "Book"
-
-### Résultat attendu
-- Message d’erreur s’affiche
-- Formulaire non soumis
-
-### Statut
-À tester
+### Status
+To be tested
 
 ---
 
-## TC003 – Navigation vers la page de connexion backoffice
+## TC002 – Email field validation (invalid email)
 
-### Préconditions
-- L’utilisateur est sur la page d’accueil
+### Preconditions
+- The user is on the homepage
 
-### Étapes
-1. Cliquer sur le lien "Backoffice"
-2. Vérifier que la page de connexion s’affiche
+### Steps
+1. Fill all fields except the email (example: "lucia" or "lucia@")
+2. Click on "Book"
 
-### Résultat attendu
-- La page de connexion apparaît avec les champs "Username" et "Password"
+### Expected Result
+- An error message is displayed
+- The form is not submitted
 
-### Statut
-À tester
+### Status
+To be tested
+
+---
+
+## TC003 – Navigation to backoffice login page
+
+### Preconditions
+- The user is on the homepage
+
+### Steps
+1. Click on the "Backoffice" link
+2. Verify that the login page appears
+
+### Expected Result
+- The login page appears with "Username" and "Password" fields
+
+### Status
+To be tested
